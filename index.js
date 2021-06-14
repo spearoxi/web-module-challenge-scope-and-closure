@@ -1,6 +1,6 @@
 // ⭐️ Example Challenge START ⭐️
 
-/***Example Task : processFirstItem()
+/**Example Task : processFirstItem()
  * This example shows how you might go about solving the rest of the tasks
  * 
  * Use the higher order function processFirstItem below to do the following:
@@ -28,11 +28,16 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+        counter1 declares "count" inside the function while counter 2 declares "count" outside of the function. 
+        In other words, "count" in counter1 has a global scope while "count" in counter2 has a local scope.
   
   2. Which of the two uses a closure? How can you tell?
+        counter2 uses a closure since its looking outside of the function for "count".
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+        If you want "count" to reset back to zero each time the function is called, then counter1 is preferable. If you want "count" to continue incrementing and hold its value, then counter2 is preferable. Also, counter two would be best if you want "count" to be accessible my multiple functions.
+
 */
 
 // counter1 code
