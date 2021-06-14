@@ -1,6 +1,6 @@
 // ⭐️ Example Challenge START ⭐️
 
-/**Example Task : processFirstItem()
+/***Example Task : processFirstItem()
  * This example shows how you might go about solving the rest of the tasks
  * 
  * Use the higher order function processFirstItem below to do the following:
