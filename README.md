@@ -43,6 +43,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+      When a function looks for a value defined outside of it's local scope. Child functions can access values of parent functions, but parent functions cannot look inside their child functions for a value.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,9 +66,14 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+    newRoll is not directly accessible by dansRoll and zoesRoll, but because personalDice can access newRoll, dansRoll and zoesRoll can also access it. 
+    So newRoll is the closure.
 
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+    Since the function inside personalDice is using Math.random, the value of dansRoll can be different each time. The value for name will always be the same.
+
+c. What is the lexical scope of `newRoll`? 
+    local scope of personalDice
 
 ### Task 3 - Stretch Goals
 
