@@ -66,14 +66,14 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-    newRoll is not directly accessible by dansRoll and zoesRoll, but because personalDice can access newRoll, dansRoll and zoesRoll can also access it. 
-    So newRoll is the closure.
+    name is not directly accessible by dansRoll and zoesRoll, but because personalDice includes name, dansRoll and zoesRoll can also access it. 
+    So name is the closure.
 
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
     Since the function inside personalDice is using Math.random, the value of dansRoll can be different each time. The value for name will always be the same.
 
 c. What is the lexical scope of `newRoll`? 
-    local scope of personalDice
+    local scope of personalDice 
 
 ### Task 3 - Stretch Goals
 
